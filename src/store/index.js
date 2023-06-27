@@ -1,5 +1,5 @@
 import persistReducer from "redux-persist/es/persistReducer";
-import { rootReducer } from "./rootReducer";
+import { rootReducer } from "./slices/rootReducer";
 import { configureStore } from "@reduxjs/toolkit";
 import {
   FLUSH,
