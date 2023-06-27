@@ -1,7 +1,12 @@
 import { ThemeProvider, createTheme } from "@mui/material";
+import { MuiButton } from "./Button";
 
 const Theme = ({ children }) => {
-  const theme = createTheme({});
+  const theme = createTheme({
+    components: {
+      MuiButton,
+    },
+  });
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 };
 
